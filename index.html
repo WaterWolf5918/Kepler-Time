@@ -2,18 +2,38 @@
 	<Body background="image/image-2.png">   
 
 
-	<a href=" " download> 
-		<button class="button" id="button" onclick="meep()">Coming Soon </button>
+	<a href="https://discord.gg/6A5JnSSX" download> 
+		<button class="button" id="button" onclick="meep1()">Coming Soon </button>
 	</a> 
 		<img id="img" src="image/WaterModded.png">
 
-<!-- Get WaterModded -->
+	<a href="https://discord.gg/6A5JnSSX" download> 
+		<button class="button2" id="button" onclick="meep2()">Discord </button>
+	</a> 
+	<button class="button3" id="button" onclick="meep3()">Minecraft Server </button>
 
 
+
+
+
+
+
+
+
+
+
+
+
+ <!-- The text field -->
+ <input type="text" value="ServerIp" id="myInput">
 
 
 	<script>
-		function meep(){
+
+	</script>
+
+	<script>
+		function meep1(){
 	 let i = document.getElementById("button") 
 	i.style.backgroundColor = "#000000bb";
 	i.style.borderStyle = "double"
@@ -21,22 +41,73 @@
 	console.log("clicked")
 }
 	</script>
+	<script>
+		function meep2(){
+	 let i = document.getElementById("button2") 
+	i.style.backgroundColor = "#000000bb";
+	i.style.borderStyle = "double"
+	i.style.borderColor = "#555555"
+	console.log("clicked")
+}
+	</script>
+	<script>
+		function meep3(){
 
+	  var copyText = document.getElementById("myInput");
+
+/* Select the text field */
+copyText.select();
+copyText.setSelectionRange(0, 99999); /*For mobile devices*/
+
+/* Copy the text inside the text field */
+document.execCommand("copy");
+
+/* Alert the copied text */
+alert("Copied the Server Ip");
+	  /* Get the text field */
+}
+
+
+
+	</script>
 <style>
 	.button{
 	width: 200px;
 	height: 100;
 	margin-left: 8.5in;
-	margin-top: 4.5in;
+	margin-top: 3.5in;
 	font-size: 20;
 	color: #ccccccff;
 	background-color: #0000008a;
 	border-style:solid;
 	border-color: #bbbbbbff;
 
-
 }
 
+.button2{
+	width: 200px;
+	height: 100;
+	margin-left: 8.5in;
+	margin-top: 0.5in;
+	font-size: 20;
+	color: #ccccccff;
+	background-color: #0000008a;
+	border-style:solid;
+	border-color: #bbbbbbff;
+
+}
+.button3{
+	width: 200px;
+	height: 100;
+	margin-left: 8.5in;
+	margin-top: 0.5in;
+	font-size: 20;
+	color: #ccccccff;
+	background-color: #0000008a;
+	border-style:solid;
+	border-color: #bbbbbbff;
+
+}
 #img{
 	position: relative;
 	/* display:block; */
@@ -49,6 +120,11 @@
 	overflow: clip;
 }
 
+
+#myInput{
+	width: 0;
+	height: 0;
+}
 </style>
 	
 
