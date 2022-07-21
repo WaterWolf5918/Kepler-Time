@@ -1,0 +1,103 @@
+:root {
+	/*   color variables */
+	--clr-primary: #0e48fe;
+    --clr-primary-hover: #29e6a7;
+    --clr-primary-dark: #039d69;
+    --clr-gray100: #fafafa;
+    --clr-gray150: #fbfbfb;
+    --clr-gray200: #f0f0f0;
+    --clr-gray300: #dfdfdf;
+    --clr-gray400: #818181;
+    --clr-gray500: #5a5a5a;
+    --clr-gray600: #363636;
+    --clr-gray700: rgb(46, 46, 46);
+    --clr-notification-hover: #ffebeb;
+    --clr-notification: #ffc2c2;
+    --clr-notification-dark: #e00000;
+	--radius: 0.2rem;
+}
+
+body {
+    background:  linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url('https://wallpaperboat.com/wp-content/uploads/2019/09/minecraft-background-shaders1.jpg') no-repeat center center fixed;
+
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+    width: 100vw;
+	color: white;
+	font-family: Mukta, Helvetica, sans-serif;
+	font-size: 1.2rem;
+	overflow: hidden;
+}
+
+
+@supports (backdrop-filter: blur()) {
+	.buttons{
+		background: #00000088;
+		backdrop-filter: blur(10px);
+	}
+}
+@supports not (backdrop-filter: blur()) {
+	.buttons{
+		background: #00000088;
+	}
+}
+
+
+
+
+#main{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flexbox;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+#img-container{
+	display: flex;
+	width: 100%;
+	height: 10%;
+	position: absolute;
+	align-items: center;
+	justify-content: center;
+	outline: 2px solid #000000;
+
+}
+
+
+
+#image{
+position: relative;
+outline: 2px solid #000000;
+
+}
+
+#main-content{
+	position: relative;
+	width: 100%;
+	height: 80%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	align-self: center;
+
+}
+
+.buttons{
+	color: white;
+	height: 10%;
+	width: 3in;
+	background: #00000088;
+	font-size: xx-large;
+	margin-top: 2%;
+}
+
+.buttons:hover{
+	background: #000000bb;
+}
+

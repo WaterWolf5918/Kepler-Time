@@ -1,0 +1,134 @@
+:root {
+	/*   color variables */
+	--clr-primary: #0e48fe;
+    --clr-primary-hover: #29e6a7;
+    --clr-primary-dark: #039d69;
+    --clr-gray100: #fafafa;
+    --clr-gray150: #fbfbfb;
+    --clr-gray200: #f0f0f0;
+    --clr-gray300: #dfdfdf;
+    --clr-gray400: #818181;
+    --clr-gray500: #5a5a5a;
+    --clr-gray600: #363636;
+    --clr-gray700: rgb(46, 46, 46);
+    --clr-notification-hover: #ffebeb;
+    --clr-notification: #ffc2c2;
+    --clr-notification-dark: #e00000;
+	--radius: 0.2rem;
+}
+
+body {
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('https://i.redd.it/wbnn4jk6p9j31.jpg') no-repeat center center fixed;
+    background-size: cover;
+	height: 100vh;
+    width: 100vw;
+	color: white;
+	font-family: Mukta, Helvetica, sans-serif;
+	font-size: 1.2rem;
+	overflow: hidden;
+	
+}
+
+
+@supports (backdrop-filter: blur()) {
+	#weather-info{
+		background: radial-gradient(#0f0f0f35, #0f0f0f35, #5a5a5a35,#98989835);
+	}
+
+}
+@supports not (backdrop-filter: blur()) {
+	#weather-info{
+		background: #1a1a1abb;
+		border: 1mm ridge #888888bb;
+	}
+
+}
+
+
+
+
+#main-weather{
+    width: 100%;
+    height: 95%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#main-weather-info{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	flex-grow: fit-content;
+	font-size: 2.5vh;
+	
+}
+
+
+#temp{
+	font-weight: bold;
+	font-size: 3vh;
+}
+
+
+#days{
+	width: 100%;
+	height: 80%;
+	display: inline;
+	align-content: center;
+	justify-content: center;
+	gap: 1rem;
+}
+
+
+#weather-info{
+	backdrop-filter: blur(5px);
+    position: relative;
+    display:flex;
+    width: 35vh;
+    height: 35vh;
+	border-radius: 50px;
+	justify-content: center;
+	align-items: top;
+	-webkit-backdrop-filter: blur(5px);
+	backdrop-filter: blur(5px);
+}
+
+
+
+
+
+
+
+
+#weather-icon{
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    position: relative;
+    top: 2vh;
+    align-items: center;
+    justify-content: center;
+}
+
+#img{
+    width: 8vh;
+    height: 8vh;
+    left: auto;
+    border-radius: 50%;
+    border: 1px solid white;
+    background: #656565;
+    position: relative;
+
+}
+
+
+
+
+
+
+

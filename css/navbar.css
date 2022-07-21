@@ -1,0 +1,58 @@
+@supports (backdrop-filter: blur()) {
+
+	#nav-bar-bottom{
+		background: radial-gradient(#11111100, #22222235, #5a5a5a55,#989898cc);
+		border: 0.1vh ridge #888888bb;
+		bottom: 0.5vh;
+	}
+}
+@supports not (backdrop-filter: blur()) {
+
+	#nav-bar-bottom{
+		background: #1a1a1abb;
+		border: 1mm ridge #888888bb;
+		bottom: 1.8vh;
+	}
+}
+
+
+
+#nav-bar-bottom{
+	position: fixed;
+	left : 0vh;
+	width: 100%;
+	height: 5vh;
+
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	overflow: hidden;
+	backdrop-filter: blur(10px);
+}
+
+
+#nav-Basic-Weather{
+	position: relative;
+	width: 5vh;
+	text-align: center;
+	border: 0.2mm ridge #888888bb;
+}
+
+#nav-Space-Weather{
+	width: 5vh;
+	text-align: center;
+	border: 0.2mm ridge #888888bb;
+}
+
+#nav-Forecast{
+	width: 5vh;
+	text-align: center;
+	border: 0.2mm ridge #888888bb;
+}
+
+#nav-Settings{
+	width: 5vh;
+	text-align: center;
+	border: 0.2mm ridge #888888bb;
+}
+
