@@ -19,10 +19,23 @@
 				
 			</div>
 			<div id="main-content" class="blur">
-				<button id="button1" class="buttons" >Button 1</button>
-				<button id="button1" class="buttons" >Button 2</button>
-				<button id="button1" class="buttons" >Button 3</button>
+				<div id="main-menu" class="show" >
+					<button id="button1" class="buttons" onclick="location.href='download.html' " >Download Modded</button>
+					<button id="button1" class="buttons" >Discord</button>
+					<button id="button1" class="buttons" onclick="serveripclick()">Server Ip</button>
+				</div>
+				<div id="server-menu" class="hide">
+					<button id="button1" class="buttons" onclick="getserverip('ip1')">Modded Server</button>
+					<button id="button1" class="buttons" onclick="getserverip('ip2')">Vanilla Server</button>
+					<textarea class="hide" id="ip1" readonly>keplertime.aternos.me</textarea>
+					<textarea class="hide" id="ip2" readonly>keplertime.aternos.me</textarea>
+				</div>
+				<div id="server-ip" class="hide">
+					<p id="server-ip-text"></p>
+				</div>
+
 			</div>
+
         </div>
 
 

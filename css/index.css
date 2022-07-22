@@ -36,9 +36,17 @@ body {
 		background: #00000088;
 		backdrop-filter: blur(10px);
 	}
+
+	#server-ip{
+		background: #00000033;
+		backdrop-filter: blur(10px);
+	}
 }
 @supports not (backdrop-filter: blur()) {
 	.buttons{
+		background: #00000088;
+	}
+	#server-ip{
 		background: #00000088;
 	}
 }
@@ -99,5 +107,56 @@ outline: 2px solid #000000;
 
 .buttons:hover{
 	background: #000000bb;
+}
+
+
+#main-menu{
+	position: relative;
+	width: 100%;
+	height: 80%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	align-self: center;
+}
+
+#server-menu{
+	position: relative;
+	width: 100%;
+	height: 80%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	align-self: center;
+}
+
+#server-ip{
+	position: relative;
+	width: 20%;
+	height: auto;
+	font-size: x-large;
+	display: flex;
+	outline: 5px groove #000000;
+	outline-color: #0044a9;
+
+	align-items: flex-start;
+	justify-content: center;
+	transform: translate(10px, 0);
+}
+
+
+#server-ip-text{
+	font-size: x-large;
+}
+
+.show{
+	display:inherit;
+
+}
+
+.hide{
+	display:none !important;
 }
 
